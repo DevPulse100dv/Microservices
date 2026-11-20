@@ -1,0 +1,1 @@
+package com.example.pickup; import org.springframework.data.jpa.repository.JpaRepository; public interface HandoverRepository extends JpaRepository<RecyclingHandover,Long>{boolean existsByPickupId(Long pickupId);}

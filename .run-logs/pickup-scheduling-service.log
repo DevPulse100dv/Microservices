@@ -1,0 +1,78 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-11-20T23:10:03.993+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] c.e.pickup.PickupSchedulingApplication   : Starting PickupSchedulingApplication v1.0.0 using Java 25.0.4.1 with PID 13156 (C:\Users\raksh\AppData\Local\Temp\smart-waste-build\pickup-scheduling-service\target\pickup-scheduling-service-1.0.0.jar started by raksh in C:\Users\raksh\OneDrive\Desktop\MicroServices)
+2026-11-20T23:10:04.005+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] c.e.pickup.PickupSchedulingApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-11-20T23:10:06.571+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-20T23:10:07.233+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 626 ms. Found 2 JPA repository interfaces.
+2026-11-20T23:10:08.015+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1b8f92c6-16c2-3f16-add7-420cf1ec1923
+2026-11-20T23:10:08.552+05:30  WARN 13156 --- [pickup-scheduling-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-11-20T23:10:08.558+05:30  WARN 13156 --- [pickup-scheduling-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-20T23:10:09.317+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2026-11-20T23:10:09.350+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-20T23:10:09.352+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-11-20T23:10:09.459+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-20T23:10:09.463+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5280 ms
+2026-11-20T23:10:09.566+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-20T23:10:10.593+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/pickup_scheduling_db user=SA
+2026-11-20T23:10:10.600+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-20T23:10:10.634+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/pickup_scheduling_db'
+2026-11-20T23:10:11.085+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-20T23:10:11.343+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-11-20T23:10:11.482+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-20T23:10:12.596+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-20T23:10:15.893+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-20T23:10:16.084+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-20T23:10:17.535+05:30  WARN 13156 --- [pickup-scheduling-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-20T23:10:18.664+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-11-20T23:10:18.898+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'collector-management-service' URL not provided. Will try picking an instance via load-balancing.
+2026-11-20T23:10:19.154+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'waste-reporting-service' URL not provided. Will try picking an instance via load-balancing.
+2026-11-20T23:10:21.835+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-11-20T23:10:21.938+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-11-20T23:10:22.042+05:30  WARN 13156 --- [pickup-scheduling-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-11-20T23:10:22.112+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-11-20T23:10:22.210+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-11-20T23:10:22.240+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-20T23:10:22.292+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-11-20T23:10:22.293+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-11-20T23:10:22.294+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-11-20T23:10:22.295+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-11-20T23:10:22.295+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-11-20T23:10:22.296+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-11-20T23:10:22.296+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-11-20T23:10:24.033+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-11-20T23:10:24.039+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-11-20T23:10:24.045+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-11-20T23:10:24.051+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1795196424049 with initial instances count: 2
+2026-11-20T23:10:24.060+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PICKUP-SCHEDULING-SERVICE with eureka with status UP
+2026-11-20T23:10:24.063+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1795196424062, current=UP, previous=STARTING]
+2026-11-20T23:10:24.069+05:30  INFO 13156 --- [pickup-scheduling-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PICKUP-SCHEDULING-SERVICE/localhost:pickup-scheduling-service:8083: registering service...
+2026-11-20T23:10:24.130+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2026-11-20T23:10:24.133+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-11-20T23:10:24.231+05:30  INFO 13156 --- [pickup-scheduling-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PICKUP-SCHEDULING-SERVICE/localhost:pickup-scheduling-service:8083 - registration status: 204
+2026-11-20T23:10:25.155+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-11-20T23:10:25.203+05:30  INFO 13156 --- [pickup-scheduling-service] [           main] c.e.pickup.PickupSchedulingApplication   : Started PickupSchedulingApplication in 23.439 seconds (process running for 24.74)
+2026-11-20T23:10:41.470+05:30  INFO 13156 --- [pickup-scheduling-service] [nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-20T23:10:41.473+05:30  INFO 13156 --- [pickup-scheduling-service] [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-20T23:10:41.492+05:30  INFO 13156 --- [pickup-scheduling-service] [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2026-11-20T23:15:22.366+05:30  INFO 13156 --- [pickup-scheduling-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: 
+    select
+        ps1_0.id,
+        ps1_0.actual_collected_quantity,
+        ps1_0.collector_id,
+        ps1_0.pickup_address,
+        ps1_0.pickup_date,
+        ps1_0.pickup_time,
+        ps1_0.scheduled_quantity,
+        ps1_0.status,
+        ps1_0.waste_report_id 
+    from
+        pickup_schedule ps1_0

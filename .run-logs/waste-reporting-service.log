@@ -1,0 +1,156 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-11-20T23:09:20.620+05:30  INFO 10384 --- [waste-reporting-service] [           main] c.e.waste.WasteReportingApplication      : Starting WasteReportingApplication v1.0.0 using Java 25.0.4.1 with PID 10384 (C:\Users\raksh\AppData\Local\Temp\smart-waste-build\waste-reporting-service\target\waste-reporting-service-1.0.0.jar started by raksh in C:\Users\raksh\OneDrive\Desktop\MicroServices)
+2026-11-20T23:09:20.625+05:30  INFO 10384 --- [waste-reporting-service] [           main] c.e.waste.WasteReportingApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-11-20T23:09:22.628+05:30  INFO 10384 --- [waste-reporting-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-20T23:09:23.145+05:30  INFO 10384 --- [waste-reporting-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 484 ms. Found 1 JPA repository interface.
+2026-11-20T23:09:23.713+05:30  INFO 10384 --- [waste-reporting-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=30d33856-8adb-3a72-98c2-d8ae0762b1ef
+2026-11-20T23:09:24.179+05:30  WARN 10384 --- [waste-reporting-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-11-20T23:09:24.187+05:30  WARN 10384 --- [waste-reporting-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-20T23:09:25.075+05:30  INFO 10384 --- [waste-reporting-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-11-20T23:09:25.109+05:30  INFO 10384 --- [waste-reporting-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-20T23:09:25.110+05:30  INFO 10384 --- [waste-reporting-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-11-20T23:09:25.245+05:30  INFO 10384 --- [waste-reporting-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-20T23:09:25.251+05:30  INFO 10384 --- [waste-reporting-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4556 ms
+2026-11-20T23:09:25.343+05:30  INFO 10384 --- [waste-reporting-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-20T23:09:26.311+05:30  INFO 10384 --- [waste-reporting-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/waste_reporting_db user=SA
+2026-11-20T23:09:26.317+05:30  INFO 10384 --- [waste-reporting-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-20T23:09:26.385+05:30  INFO 10384 --- [waste-reporting-service] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/waste_reporting_db'
+2026-11-20T23:09:26.728+05:30  INFO 10384 --- [waste-reporting-service] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-20T23:09:26.944+05:30  INFO 10384 --- [waste-reporting-service] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-11-20T23:09:27.064+05:30  INFO 10384 --- [waste-reporting-service] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-20T23:09:28.087+05:30  INFO 10384 --- [waste-reporting-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-20T23:09:30.637+05:30  INFO 10384 --- [waste-reporting-service] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-20T23:09:30.730+05:30  INFO 10384 --- [waste-reporting-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-20T23:09:31.706+05:30  WARN 10384 --- [waste-reporting-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-20T23:09:33.955+05:30  INFO 10384 --- [waste-reporting-service] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-11-20T23:09:35.068+05:30  INFO 10384 --- [waste-reporting-service] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-11-20T23:09:35.136+05:30  INFO 10384 --- [waste-reporting-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-11-20T23:09:35.231+05:30  WARN 10384 --- [waste-reporting-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-11-20T23:09:35.270+05:30  INFO 10384 --- [waste-reporting-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-11-20T23:09:35.332+05:30  INFO 10384 --- [waste-reporting-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-11-20T23:09:35.342+05:30  INFO 10384 --- [waste-reporting-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-20T23:09:35.361+05:30  INFO 10384 --- [waste-reporting-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-11-20T23:09:35.362+05:30  INFO 10384 --- [waste-reporting-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-11-20T23:09:35.363+05:30  INFO 10384 --- [waste-reporting-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-11-20T23:09:35.363+05:30  INFO 10384 --- [waste-reporting-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-11-20T23:09:35.364+05:30  INFO 10384 --- [waste-reporting-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-11-20T23:09:35.365+05:30  INFO 10384 --- [waste-reporting-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-11-20T23:09:35.365+05:30  INFO 10384 --- [waste-reporting-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-11-20T23:09:36.533+05:30  INFO 10384 --- [waste-reporting-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-11-20T23:09:36.536+05:30  INFO 10384 --- [waste-reporting-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-11-20T23:09:36.540+05:30  INFO 10384 --- [waste-reporting-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-11-20T23:09:36.543+05:30  INFO 10384 --- [waste-reporting-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1795196376542 with initial instances count: 0
+2026-11-20T23:09:36.549+05:30  INFO 10384 --- [waste-reporting-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application WASTE-REPORTING-SERVICE with eureka with status UP
+2026-11-20T23:09:36.550+05:30  INFO 10384 --- [waste-reporting-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1795196376550, current=UP, previous=STARTING]
+2026-11-20T23:09:36.554+05:30  INFO 10384 --- [waste-reporting-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_WASTE-REPORTING-SERVICE/localhost:waste-reporting-service:8081: registering service...
+2026-11-20T23:09:36.598+05:30  INFO 10384 --- [waste-reporting-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-11-20T23:09:36.601+05:30  INFO 10384 --- [waste-reporting-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-11-20T23:09:36.995+05:30  INFO 10384 --- [waste-reporting-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_WASTE-REPORTING-SERVICE/localhost:waste-reporting-service:8081 - registration status: 204
+2026-11-20T23:09:37.627+05:30  INFO 10384 --- [waste-reporting-service] [           main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-11-20T23:09:37.673+05:30  INFO 10384 --- [waste-reporting-service] [           main] c.e.waste.WasteReportingApplication      : Started WasteReportingApplication in 18.881 seconds (process running for 19.736)
+2026-11-20T23:10:06.558+05:30  INFO 10384 --- [waste-reporting-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-11-20T23:10:06.573+05:30  INFO 10384 --- [waste-reporting-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-11-20T23:10:06.574+05:30  INFO 10384 --- [waste-reporting-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-11-20T23:10:06.574+05:30  INFO 10384 --- [waste-reporting-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-11-20T23:10:06.575+05:30  INFO 10384 --- [waste-reporting-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-11-20T23:10:06.576+05:30  INFO 10384 --- [waste-reporting-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-11-20T23:10:06.577+05:30  INFO 10384 --- [waste-reporting-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-11-20T23:10:06.978+05:30  INFO 10384 --- [waste-reporting-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-11-20T23:10:39.274+05:30  INFO 10384 --- [waste-reporting-service] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-20T23:10:39.280+05:30  INFO 10384 --- [waste-reporting-service] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-20T23:10:39.343+05:30  INFO 10384 --- [waste-reporting-service] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 61 ms
+Hibernate: 
+    select
+        wr1_0.id,
+        wr1_0.description,
+        wr1_0.pickup_address,
+        wr1_0.quantity,
+        wr1_0.report_date,
+        wr1_0.reporter_name,
+        wr1_0.reporter_type,
+        wr1_0.status,
+        wr1_0.waste_category 
+    from
+        waste_report wr1_0
+Hibernate: 
+    select
+        wr1_0.id,
+        wr1_0.description,
+        wr1_0.pickup_address,
+        wr1_0.quantity,
+        wr1_0.report_date,
+        wr1_0.reporter_name,
+        wr1_0.reporter_type,
+        wr1_0.status,
+        wr1_0.waste_category 
+    from
+        waste_report wr1_0 
+    where
+        wr1_0.id=?
+Hibernate: 
+    select
+        wr1_0.id,
+        wr1_0.description,
+        wr1_0.pickup_address,
+        wr1_0.quantity,
+        wr1_0.report_date,
+        wr1_0.reporter_name,
+        wr1_0.reporter_type,
+        wr1_0.status,
+        wr1_0.waste_category 
+    from
+        waste_report wr1_0 
+    where
+        wr1_0.id=?
+Hibernate: 
+    update
+        waste_report 
+    set
+        description=?,
+        pickup_address=?,
+        quantity=?,
+        report_date=?,
+        reporter_name=?,
+        reporter_type=?,
+        status=?,
+        waste_category=? 
+    where
+        id=?
+Hibernate: 
+    select
+        wr1_0.id,
+        wr1_0.description,
+        wr1_0.pickup_address,
+        wr1_0.quantity,
+        wr1_0.report_date,
+        wr1_0.reporter_name,
+        wr1_0.reporter_type,
+        wr1_0.status,
+        wr1_0.waste_category 
+    from
+        waste_report wr1_0 
+    where
+        wr1_0.id=?
+2026-11-20T23:14:35.385+05:30  INFO 10384 --- [waste-reporting-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: 
+    select
+        wr1_0.id,
+        wr1_0.description,
+        wr1_0.pickup_address,
+        wr1_0.quantity,
+        wr1_0.report_date,
+        wr1_0.reporter_name,
+        wr1_0.reporter_type,
+        wr1_0.status,
+        wr1_0.waste_category 
+    from
+        waste_report wr1_0

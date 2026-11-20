@@ -1,0 +1,1 @@
+package com.example.pickup; import org.springframework.data.jpa.repository.JpaRepository; public interface PickupRepository extends JpaRepository<PickupSchedule,Long>{boolean existsByWasteReportIdAndStatusNot(Long reportId,PickupStatus status);}

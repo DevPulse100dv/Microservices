@@ -1,0 +1,9 @@
+package com.example.pickup;
+import jakarta.validation.Valid; import jakarta.validation.constraints.*; import org.springframework.validation.annotation.Validated; import org.springframework.web.bind.annotation.*; import java.util.*;
+@RestController @Validated @RequestMapping("/pickups") public class PickupController {
+ private final PickupService service;public PickupController(PickupService s){service=s;}
+ @GetMapping public List<PickupSchedule> all(){return service.all();}@GetMapping("/{id}") public PickupSchedule get(@PathVariable long id){return service.get(id);}
+ @PostMapping public PickupSchedule create(@Valid @RequestBody ValidSchedule r){return service.create(new ScheduleRequest(r.wasteReportId(),r.collectorId(),r.pickupDate(),r.pickupTime(),r.pickupAddress(),r.scheduledQuantity()));}
+ @PatchMapping("/{id}/start") public PickupSchedule start(@PathVariable long id){return service.start(id);}@PatchMapping("/{id}/complete") public PickupSchedule complete(@PathVariable long id,@Valid @RequestBody ValidComplete r){return service.complete(id,r.actualCollectedQuantity());}@PostMapping("/{id}/handover") public RecyclingHandover handover(@PathVariable long id,@Valid @RequestBody ValidHandover r){return service.handover(id,new HandoverRequest(r.organizationName(),r.quantityTransferred()));}@PatchMapping("/{id}/cancel") public PickupSchedule cancel(@PathVariable long id){return service.cancel(id);}
+}
+record ValidSchedule(@NotNull @Positive Long wasteReportId,@NotNull @Positive Long collectorId,@NotNull java.time.LocalDate pickupDate,@NotNull java.time.LocalTime pickupTime,@NotBlank String pickupAddress,@Positive double scheduledQuantity){} record ValidComplete(@Positive double actualCollectedQuantity){} record ValidHandover(@NotBlank String organizationName,@Positive double quantityTransferred){}

@@ -1,0 +1,15 @@
+# Java / Maven
+**/target/
+**/data/
+*.mv.db
+*.trace.db
+
+# React / Node
+frontend/node_modules/
+frontend/dist/
+
+# IDE and OS
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
